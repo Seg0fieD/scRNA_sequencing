@@ -24,7 +24,6 @@ This project focused on single-cell RNA sequencing (scRNA-seq) data analysis, sp
 
 10. **Trajectory Analysis**: A subset of cells was selected for trajectory analysis using Monocle 3 to study the progression of cell states.
 
-11. **Cell-Cell Communication**: Cell-cell communication was analyzed using CellChat for both BMMC and CD34 samples, focusing on common signaling pathways.
 
 ## R Script:
 The R script used for analysis is named **scRNA_seq_script**. 
