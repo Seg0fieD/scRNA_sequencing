@@ -1,8 +1,4 @@
-setwd("~/single_cell/project_1")
-getwd()
-set.seed(2)
-
-
+# Library _____________________________________________________________________________
 suppressPackageStartupMessages({
   library(dplyr)
   library(spatstat.core)
@@ -22,17 +18,19 @@ suppressPackageStartupMessages({
   library(celldex)
   library(EnhancedVolcano)
 })
+# ____________________________________________________________________________________
 
+# set working dir 
+setwd("~/scRNA_sequencing/")
+
+# file path to save rds files
 file_path <- "saved_rds/"
 
-
-
-
 # Read files
-bmmc1 <- readRDS("~/single_cell/project_1/data/GSM4138872_scRNA_BMMC_D1T1.rds")
-bmmc2 <- readRDS("~/single_cell/project_1/data/GSM4138873_scRNA_BMMC_D1T2.rds")
-cd1 <- readRDS("~/single_cell/project_1/data/GSM4138874_scRNA_CD34_D2T1.rds")
-cd2 <- readRDS("~/single_cell/project_1/data/GSM4138875_scRNA_CD34_D3T1.rds")
+bmmc1 <- readRDS("data/GSM4138872_scRNA_BMMC_D1T1.rds")
+bmmc2 <- readRDS("data/GSM4138873_scRNA_BMMC_D1T2.rds")
+cd1 <- readRDS("data/GSM4138874_scRNA_CD34_D2T1.rds")
+cd2 <- readRDS("data/GSM4138875_scRNA_CD34_D3T1.rds")
 
 # Check dimensions
 dim(bmmc1)
